@@ -1,0 +1,16 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    margin: 20px;
+}
+.h1{
+    font-size: 24px;
+    color: red;
+}
+
+.box1{
+    background-color: lightgreen;
+    border-color: green;
+    border-width: 4px;}

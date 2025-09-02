@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Example</title>
+</head>
+<body>
+
+  <h1 id="heading">Hello World</h1>
+  <p id="paragraph">This is a paragraph.</p>
+  <button id="changeBtn">Change Content</button>
+  <button id="addBtn">Add New Item</button>
+  <ul id="itemList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+  <button id="Btn-1">Close</button>
+
+  <!-- jQuery CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+  <!-- Custom jQuery code -->
+  <script>
+    // Change text and style on click
+    $("#changeBtn").click(function() {
+      $("#heading").text("Heading Changed!").css("color", "blue");
+      $("#paragraph").text("Paragraph updated using jQuery.").css("font-weight", "bold");
+    });
+
+    // Add new list item dynamically
+    $("#addBtn").click(function() {
+      let newItem = $("<li>").text("New Item " + ($("#itemList li").length + 1));
+      $("#itemList").append(newItem);
+    });
+
+    // Hover effect for list items
+    $("#itemList").on("mouseenter", "li", function() {
+      $(this).css("background-color", "yellow");
+    }).on("mouseleave", "li", function() {
+      $(this).css("background-color", "");
+    });
+    // Close button functionality
+    $("#Btn-1").css({
+      "background-color": "red",
+      "color": "white",
+      "padding": "10px 20px",
+      "border": "none",
+      "cursor": "pointer",
+      "border-radius": "3px",
+      "border": "2px solid green"
+    });
+    $("#Btn-1").click(function() {
+      $("body").fadeOut();
+      $("#Btn-1").text("Closed");
+      $("#Btn-1").css({
+        "background-color":"red",
+        "opacity": "0.5"
+    });
+    });
+    //creating a save button below the close button 
+    let saveBtn = $("<button>").attr("id", "saveBtn").text("Save").css({
+      "background-color": "blue",
+      "color": "white",
+      "padding": "10px 20px",
+      "border": "none",
+      "cursor": "pointer",
+      "margin-left": "10px",
+       "border-radius": "3px",
+      "border": "2px solid green"
+    });
+    $("#Btn-1").after(saveBtn);
+    $("#saveBtn").click(function() {
+      alert("Content Saved!");
+      $("#saveBtn").css({
+        "background-color":"blue",
+        "opacity": "0.5"
+      });
+    });
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap and Taiwind-CSS Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <h1 class="text-success">Mike</h1>
+  <button class="btn btn-primary btn-sm">Click Me</button>
+  <button class="btn btn-danger">Save</button>
+  <button class="btn btn-danger btn-lg">Delete</button>
+
+  <h2>Customer details</h2>
+  <div class="table-responsiv">
+    <table class="table ">
+    <thead class="table-hover table-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col" >Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr class="table-success">
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </div>
+  
+  <table border="1">
+  <tr>
+    <th scope="row">Alice</th>
+    <td>25</td>
+    <td>Accra</td>
+  </tr>
+  <tr>
+    <th scope="row">Bob</th>
+    <td>30</td>
+    <td>Kumasi</td>
+  </tr>
+  <tr>
+    <th scope="row">Charlie</th>
+    <td>28</td>
+    <td>Tamale</td>
+  </tr>
+</table>
+
+<!-- creating alert in bootstrap -->
+<div class="alert alert-warning alert-dismissible fade show" role="alert"> Michael is coming back</div>
+ <div class="alert alert-success alert-dismissible">
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  <strong>Success!</strong> This alert box could indicate a successful or positive action.
+</div>
+
+<!-- spinner buttons -->
+ <button class="btn btn-primary">
+  <span class="spinner-border spinner-border-sm"></span>
+</button>
+
+<button class="btn btn-primary">
+  <span class="spinner-border spinner-border-sm"></span>
+  Loading..
+</button>
+
+<button class="btn btn-primary" disabled>
+  <span class="spinner-border spinner-border-sm"></span>
+  Loading..
+</button>
+
+<button class="btn btn-primary" disabled>
+  <span class="spinner-grow spinner-grow-sm"></span>
+  Loading..
+</button>
+
+<!-- spinner border -->
+ <div class="spinner-border text-muted"></div>
+<div class="spinner-border text-primary"></div>
+<div class="spinner-border text-success"></div>
+<div class="spinner-border text-info"></div>
+<div class="spinner-border text-warning"></div>
+<div class="spinner-border text-danger"></div>
+<div class="spinner-border text-secondary"></div>
+<div class="spinner-border text-dark"></div>
+<div class="spinner-border text-light"></div>
+
+<!-- spinner-grow -->
+ <div class="spinner-grow text-muted"></div>
+<div class="spinner-grow text-primary"></div>
+<div class="spinner-grow text-success"></div>
+<div class="spinner-grow text-info"></div>
+<div class="spinner-grow text-warning"></div>
+<div class="spinner-grow text-danger"></div>
+<div class="spinner-grow text-secondary"></div>
+<div class="spinner-grow text-dark"></div>
+<div class="spinner-grow text-light"></div>
+
+<!-- Pagination -->
+ <ul class="pagination">
+  <li class="page-item"> <a href="#"  class="page-link">Previous</a> </li>
+  <li class="page-item"> <a href="#" class="page-link" >1</a> </li>
+  <li class="page-item active" > <a href="#"  class="page-link">2</a> </li> 
+  <li class="page-item"> <a href="#"  class="page-link">3</a> </li>
+  <li class="page-item"> <a href="#"  class="page-link">Next</a>
+  </li>
+ </ul>
+
+ <!-- dropdown in bootstrap -->
+  <h1>Dropdown in Bootstrap 5</h1>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu" >
+      <li class="dropdown-header"><h5>Activity</h5></li>
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+
+  </div>
+
+  <!-- Bootstrap collapsible -->
+  <h1>Bootstrap Collapsible</h1>
+  <div class="collapse" id="collapseExample" >
+    <h3>Country</h3>
+    <ul>
+      <li>Ghana</li>
+      <li>Nigeria</li>
+      <li>Togo</li>
+      <li>Italy</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Minus perspiciatis quidem nesciunt dolores earum delectus libero adipisci, maiores quibusdam modi?</p>
+  </div>
+  <button  data-bs-target="#collapseExample" data-bs-toggle="collapse" >View More</button>
+
+  <!-- tooltip is bs -->
+  <h1>Bootstrap Tooltip</h1>
+  <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Hooray🙂🙂!">Hover over me!</button>
+
+  <!-- popovers -->
+  <h1>Bootstrap Popovers</h1>
+  <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover Header" data-bs-content="Some content inside the popover">Toggle popover</button>
+   <!-- BS5 forms -->
+  <h1>Bootstrap Forms</h1>
+  <form action="/action_page.php">
+  <div class="mb-3 mt-3">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+  </div>
+  <div class="mb-3">
+    <label for="pwd" class="form-label">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+  </div>
+  <div class="form-check mb-3">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="remember"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<h2>Comment Textarea</h2><label for="comment">Comments:</label>
+<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script>
+    // Initialize tooltip
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    // Initialize popover
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+</body>
+</html>
